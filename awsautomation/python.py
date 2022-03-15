@@ -1,27 +1,31 @@
 '''
-import os
-import random 
-x = random.randint(1, 1000)
-if x > 1:
-    x = {'a'}
-    y = open(x, 'w')
-    y.write('Te amo gordinha')
-    y.close()
-    y = open(x, 'r')
-    print(y.read())
-    y.close()
+lista = ['Weiller', 'Nicole', 'Maria', 'Blue']
 
-else:
-    print()
+lista2 = [a for a in lista if 'e' in a]
 
-if os.path.exists('Nicole.txt'):
-    os.remove('Nicole.txt')
-else:
-    print()
+print(lista2)
+
 '''
+'''
+lista = ['Weiller', 'Nicole', 'Maria', 'Blue']
 
-def x(a):
-    return lambda n: n + a
-y = x(2)
+list2 = []
 
-print(y(4))
+for a in lista:
+    if 'e' in a:
+       list2.append(a)
+print(list2)
+'''
+'''
+from sys import getsizeof
+
+valores = [x * 10 for x in range(100)]
+print(valores)
+print(getsizeof(valores))
+
+print('===')
+
+valores2 = (x * 10 for x in range(100)) (Generator Expressions/Genex)
+print(list(valores2))
+print(getsizeof(valores2))
+'''
