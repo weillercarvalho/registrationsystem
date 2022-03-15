@@ -1,1 +1,1 @@
-# aws-cloud-automation 🛤
+# AWS Cloud Automation 🛤
